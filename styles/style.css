@@ -1,0 +1,190 @@
+/* Reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+   line-height: 1.6;
+   background-color: #f4f4f4;
+   color: #333;
+}
+
+.container {
+   width: 90%;
+   max-width: 1200px;
+   margin: auto;
+   overflow: hidden;
+}
+
+header {
+   background: #f5f5f4;
+   color: #a855f7;
+   padding: 60px 20px;
+   text-align: center;
+   margin-bottom: 40px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   position: relative;
+}
+
+header .branding {
+   margin-bottom: 70px;
+   margin-top: 10px;
+}
+
+header h1 {
+   font-weight: 600;
+   font-size: 3em;
+}
+
+header p {
+   font-size: 1.4em;
+   color: #334155;
+   font-weight: 600;
+}
+
+header nav {
+   padding: 10px 0;
+   position: absolute;
+   bottom: 25px;
+   width: calc(100% - 40px); /* Lebar penuh dengan margin */
+   left: 20px;
+}
+
+header nav ul {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   flex-wrap: wrap; /* Agar navbar responsif */
+}
+
+header nav ul li {
+   position: relative;
+}
+
+header nav ul li a {
+   color: #fff;
+   text-decoration: none;
+   padding: 10px 20px;
+   border-radius: 30px;
+   background: #0ea5e9;
+   transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+   background: #0284c7; /* Biru lebih gelap */
+}
+
+.hero {
+   background: linear-gradient(to right, #38bdf8, #d946ef);
+   color: #fff;
+   padding: 100px 20px;
+   text-align: center;
+   border-radius: 15px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   margin-bottom: 40px;
+}
+
+.hero h2 {
+   font-size: 2em;
+   margin-bottom: 20px; /* Mengubah margin untuk jarak lebih baik */
+}
+
+.hero p {
+   font-size: 1em;
+   margin-bottom: 30px;
+}
+
+.cta-button {
+   display: inline-block;
+   padding: 15px 30px;
+   background: #fff;
+   color: #003366; /* Biru gelap */
+   border-radius: 30px;
+   text-decoration: none;
+   font-weight: bold;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+   transform: translateY(-5px);
+}
+
+.about,
+.projects {
+   padding: 40px 20px;
+}
+
+.about .content {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.about .profile {
+   flex: 2;
+}
+
+.about .sidebar {
+   flex: 1;
+   background: #fff;
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   position: relative; /* Untuk positioning elemen internal */
+}
+
+.sidebar-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.sidebar img {
+   width: 150px;
+   height: 180px;
+   border-radius: 10%; /* Membuat gambar menjadi bulat */
+   margin-bottom: 15px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar h3 {
+   color: #0ea5e9;
+   margin-bottom: 10px;
+}
+
+.sidebar p {
+   font-size: 1em;
+   color: #333;
+}
+
+.projects .project-list {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 20px;
+}
+
+.projects .project {
+   background: #fff;
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects .project h3 {
+   color: #003366; /* Biru gelap */
+   margin-bottom: 10px;
+}
+
+footer {
+   background: #002244; /* Biru sangat gelap untuk footer */
+   color: #fff;
+   text-align: center;
+   padding: 20px;
+   margin-top: 40px;
+   border-radius: 15px 15px 0 0;
+}
